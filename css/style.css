@@ -1,0 +1,338 @@
+/*----- Personalize -----*/
+
+.color.perso-1 {
+  background-color: #1F2228;
+}
+
+.color.perso-2 {
+  background-color: #3E4450;
+}
+
+.border-radius {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.border{
+  border: 2px white solid;
+}
+
+img.border-radius {
+  padding: 0px !important;
+}
+
+.linkedin{
+  --myColor1:blue; 
+  --myColor2: purple;
+}
+
+.linkedin:hover{
+  --myColor1:purple !important; 
+  --myColor2:blue !important;
+}
+
+.center-box {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+img {
+  display: block;
+}
+
+.project-icons {
+  margin-top: 20px;
+  font-size: 40px;
+  background: linear-gradient(29deg, #c800c8 0%, cyan 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-skill {
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.project-skill div {
+  margin-top: 30px;
+}
+
+/*----- Principal -----*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white !important;
+  font-family: Poppins !important;
+}
+
+nav{
+  position: fixed;
+  z-index: 998;
+}
+
+header .parallax-container {
+  min-height: 50vh;
+} 
+
+header .parallax{
+  z-index: 0;
+}
+
+.sidenav li a i.material-icons,
+input,
+textarea {
+  color: white !important;
+}
+
+/*----- dropdown-menu -----*/
+
+#dropdown-team li:hover {
+  background-color: transparent;
+}
+
+/*----- Contact -----*/
+
+#contact .row {
+  margin-bottom: 0px;
+}
+
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: red;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: orange;
+  inherits: false;
+}
+
+div button.btn {
+  border-radius: 18px;
+  margin-bottom: 15px;
+}
+
+div button.btn,
+a.btn-floating,
+a.btn {
+  background: linear-gradient(var(--myColor2),var(--myColor1));
+  transition: --myColor1 0.4s, --myColor2 0.4s;
+}
+
+div button.btn:hover,
+a.btn-floating:hover,
+a.btn:hover {
+ --myColor1:orange; 
+ --myColor2:red; 
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field .prefix.active {
+  color: orange !important;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid orange !important;
+  box-shadow: 0 1px 0 0 orange !important;
+}
+
+/*----- Team -----*/
+
+#team {
+  scroll-margin: 64px;
+}
+
+.section {
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  padding-bottom: 0px;
+}
+
+/*----- Logout -----*/
+
+#logout p {
+  text-align: center !important;
+}
+
+/*----- Carousel -----*/
+
+.carousel{
+  border-top: 2px white solid;
+  height: 70vh !important;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item div {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(20%);
+}
+
+.carousel-item.gb {
+  background-image: url("../img/gang-beasts-01.jpg");
+}
+
+.carousel-item.am {
+  background-image: url("../img/a_mazing-01.jpg");
+}
+
+.carousel-item.rl {
+  background-image: url("../img/rocket-league-01.jpg");
+}
+
+.carousel-item.pm {
+  background-image: url("../img/pacman-01.jpg");
+}
+
+/*----- Footer -----*/
+
+footer.page-footer {
+  padding: 0px;
+}
+
+
+/*----- Medium and small screen -----*/
+
+@media screen and (max-width: 993px){
+  header {
+    min-height: 500px;
+  }
+  
+  #team {
+    scroll-margin: 56px;
+  }
+
+  .carousel {
+    height: 40vh !important;
+  }
+  .easter-gif img {
+    width: 30vh;
+  }
+}
+
+/*----- Small screen -----*/
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px !important;
+  }
+}
+
+/*----- Easter Egg 01 -----*/
+
+body.easter-egg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+button.dont-click {
+  height: 150px !important;
+  font-size: 100px;
+  background-image: none !important;
+  background-color: red !important;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box !important;
+  padding: 0px;
+}
+
+img.robot {
+  width: 500px;
+}
+
+.bubble-text {
+  background:#ffffff;
+  color:#000000;
+  padding:7px 15px;
+  border-radius:3px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bubble-text::after {
+  content:""; 
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  border-top: 20px solid #ffffff;
+  position: absolute;
+}
+
+@media screen and (max-width: 617px) {
+  button.dont-click {
+    font-size: 30px;
+  }
+}
+
+/*----- Easter Egg 02 -----*/
+
+.easter-gif {
+  display: none; 
+  position: fixed;
+  right: 0px;
+  bottom: -20px;
+  z-index: 9999;
+}
+
+/*----- Error -----*/
+
+.error {
+  text-align: center;
+  color : "red";
+}
+
+/*----- Admin -----*/
+
+.btn-admin {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.btn-admin .btn {
+  margin: 20px;
+}
+
+.delete-admin {
+  margin-left: 20px;
+}
+
+.adminImg{
+  width : 100%;
+}
+
+.dropdown-content li.selected,
+.dropdown-content li:hover {
+  background-color: #16181d !important;
+}
+
+.dropdown-content li {
+  background-color: #1F2228 !important;
+}
+
+.dropdown-content li span {
+  color : white !important;
+}
+
+/*----- Identity card -----*/
+
+.row.padding-info {
+  padding: 15px;
+}
